@@ -6,3 +6,6 @@ One-to-one chat
 Group chat creation and management
 Real-time message delivery (WebSockets or Firebase)
 Message status indicators (sent, delivered, read)
+Media Sharing:
+Send images, videos, audio, documents
+Preview before sending
