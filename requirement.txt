@@ -1,0 +1,8 @@
+User Authentication:
+Sign up / login (email, phone, or social login)
+Password reset and account recovery
+Messaging:
+One-to-one chat
+Group chat creation and management
+Real-time message delivery (WebSockets or Firebase)
+Message status indicators (sent, delivered, read)
