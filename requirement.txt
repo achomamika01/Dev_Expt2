@@ -9,3 +9,6 @@ Message status indicators (sent, delivered, read)
 Media Sharing:
 Send images, videos, audio, documents
 Preview before sending
+Notifications
+Push notifications for new messages
+In-app alerts
