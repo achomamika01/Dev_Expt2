@@ -13,4 +13,5 @@ form.addEventListener('submit', function(event) {
 
   // Step 5: Handle the event (show confirmation)
   alert("Thank you, " + name + "! You have registered for the " + selectedEvent + ".\nConfirmation sent to: " + email);
+  //Step 6: How to validate. Take user password and gender detail. Female user no registration fee. 
 });
