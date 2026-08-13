@@ -13,4 +13,5 @@ form.addEventListener('submit', function(event) {
 
   // Step 5: Handle the event (show confirmation)
   alert("Thank you, " + name + "! You have registered for the " + selectedEvent + ".\nConfirmation sent to: " + email);
+  //Add the code for the validation
 });
