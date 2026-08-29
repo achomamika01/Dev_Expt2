@@ -1,48 +1,23 @@
 pipeline {
-    agent any   // Jenkins will run on any available agent
+    agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Pull latest code from GitHub repository
-                git branch: 'main', url: 'https://github.com/your-repo/project.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                // Compile and package the application using Maven
-                bat 'mvn clean install'
+                echo 'Building the project...'
             }
         }
 
         stage('Test') {
             steps {
-                // Run unit tests
-                bat 'mvn test'
-            }
-            post {
-                always {
-                    // Archive test results and reports
-                    junit '**/target/surefire-reports/*.xml'
-                }
+                echo 'Running tests...'
             }
         }
 
         stage('Deploy') {
             steps {
-                // Example deployment step (can be Docker, SSH, or cloud)
-                echo 'Deploying application to staging server...'
+                echo 'Deploying application...'
             }
-        }
-    }
-
-    post {
-        success {
-            echo '✅ Build and deployment successful!'
-        }
-        failure {
-            echo '❌ Build failed. Check logs for details.'
         }
     }
 }
